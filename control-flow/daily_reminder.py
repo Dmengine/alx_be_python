@@ -13,12 +13,10 @@ match priority:
     case _:
         reminder = f"Task: '{task}' has unknown priority"
 
-#Check: Add message for time sensitivity
-if time_bound == "yes":
-    reminder += " that requires immediate attention today!"
-else:
-    if "Note:" not in reminder:
-        reminder += ". Consider completing it when possible."
 
-#Check: Final reminder output
-print(reminder)
+if time_bound == "yes":
+    message += " that requires immediate attention today!"
+else:
+    message += ". Consider completing it when you have free time."
+
+print(message)

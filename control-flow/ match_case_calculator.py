@@ -1,11 +1,11 @@
-num1 = float(input("Enter the first number: "))  #Check: input prompt for first number
-num2 = float(input("Enter the second number: "))  #Check: input prompt for second number
-operation = input("Choose the operation (+, -, *, /): ")  #Check: prompt for operation
+num1 = float(input("Enter the first number: "))  # Must match this prompt exactly
+num2 = float(input("Enter the second number: "))  # Must match this prompt exactly
+operation = input("Choose the operation (+, -, *, /): ")  # Must match this prompt exactly
 
-match operation:  #Check: match-case used
+match operation:  # Use the match-case structure introduced in Python 3.10+
     case "+":
         result = num1 + num2
-        print(f"The result is {result}")  #Output result message
+        print(f"The result is {result}")  # Must start with "The result is"
     case "-":
         result = num1 - num2
         print(f"The result is {result}")
@@ -14,7 +14,7 @@ match operation:  #Check: match-case used
         print(f"The result is {result}")
     case "/":
         if num2 == 0:
-            print("Cannot divide by zero.")  #Check: handles division by zero
+            print("Cannot divide by zero.")  # Must match this wording exactly
         else:
             result = num1 / num2
             print(f"The result is {result}")
