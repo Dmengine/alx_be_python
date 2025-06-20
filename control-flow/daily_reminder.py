@@ -15,8 +15,8 @@ match priority:
 
 
 if time_bound == "yes":
-    message += " that requires immediate attention today!"
+    reminder += " that requires immediate attention today!"
 else:
-    message += ". Consider completing it when you have free time."
+    reminder += ". Consider completing it when you have free time."
 
-print(message)
+print(reminder)
